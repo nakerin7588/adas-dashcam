@@ -1,1 +1,17 @@
 RawVideos
+my_env
+
+# datasets
+ObjectDetector/datasets
+
+# Training
+yolo*
+runs
+
+__pycache__
+
+demo
+
+models
+
+ufld*

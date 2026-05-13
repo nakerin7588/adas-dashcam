@@ -1,0 +1,31 @@
+obj_model_settings:
+  path: "./models/object/yolo26n.engine"
+  stream: True
+  persist: False
+  half: True
+  max_det: 5
+  iou: 0.7
+  tracker: bytetrack.yaml
+  agnostic_nms: False
+  save: False
+  use_tracker: False
+  verbose: False
+  classes: [0, 1, 2, 3, 5] 
+  colors:
+    car: [255, 255, 0]       # Cyan
+    van: [0, 255, 255]       # Yellow
+    truck: [0, 165, 255]     # Orange
+    pedestrian: [0, 255, 0]  # Neon Green
+    cyclist: [255, 0, 255]   # Magenta
+
+# lane_model_settings:
+#   path: "./models/lane/ufldv2_fp16.engine"
+#   model_base: "UFLD"
+#   model_type: LaneModelType.UFLD_TUSIMPLE
+
+camera_settings:
+  # Original
+  width: 3840
+  height: 2160
+  fov: 140
+
